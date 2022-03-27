@@ -62,11 +62,7 @@ try:
         # crs.execute(update_query3)
         # connection.commit()
 
-        # update_query4 = 'UPDATE cocktails SET glass = "Стопка" WHERE type_id = 1'
-        # crs.execute(update_query4)
-        # connection.commit()
-
-        # update_query5 = 'UPDATE cocktails SET type_id = 4 WHERE type_id is null and glass not like "Стопка%"'
+        # update_query5 = 'UPDATE cocktails SET type_id = 4 WHERE type_id is null'
         # crs.execute(update_query5)
         # connection.commit()
 
@@ -85,10 +81,6 @@ try:
 #                        'recipe varchar(650), ingredients varchar(500), PRIMARY KEY (id));'
 #         crs.execute(create_query)
 #         print('created')
-
-        # query = 'DELETE FROM recipe_and_ingredients;'
-        # crs.execute(query)
-        # connection.commit()
 
 # insert ingredients and recipe into table
         for ing, rec in dict_of_all.items():
